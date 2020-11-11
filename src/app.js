@@ -7,6 +7,7 @@ const geoCode = require('./utils/geocode');
 const weatherStack = require('./utils/weatherstack');
 
 const app = express();
+const port = process.env.PORT || 3000
 console.log(__dirname)
 
 //Defining Paths for Express configs
@@ -135,8 +136,8 @@ app.get('*',(req,res)=>{
         helpMessage:'Page not found'
     })
 })
-app.listen(3000,()=>{
-    console.log('Server started')
+app.listen(port,()=>{
+    console.log('Server started on ' + port)
 })
 
 console.log('In the end of the file')
