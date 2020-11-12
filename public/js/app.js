@@ -29,7 +29,9 @@ weatherForm.addEventListener('submit', (e)=>{
                 message1.style.color= "red";
             }else{
                 message1.textContent=data.location;
-                message2.textContent=data.forecast.weather_descriptions;
+                message2.textContent= 'Weather is ' + data.forecast.weather_descriptions + '. Temperature is ' + data.forecast.temperature + 
+                ' Feels like ' + data.forecast.feels_like; 
+
                 message1.style.color=message2.style.color;
                 console.log(data.location)
                 console.log(data.forecast)

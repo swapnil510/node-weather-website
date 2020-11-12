@@ -1,7 +1,6 @@
 {
   "name": "webserver",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node src/app.js"
@@ -12,5 +11,14 @@
     "express": "^4.16.4",
     "hbs": "^4.0.1",
     "request": "^2.88.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swapnil510/node-weather-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/swapnil510/node-weather-website/issues"
+  },
+  "homepage": "https://github.com/swapnil510/node-weather-website#readme",
+  "description": ""
 }
