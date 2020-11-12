@@ -36,7 +36,7 @@ app.use(express.static(publicDirPath))
 //below line is required if we want to use hbs instead of index.html
 app.get('',(req,res) =>{
     res.render('index',{
-        title:'Hello rendering from root',
+        title:'Welcome to my Weather App!!',
         name:'Swapnil'
     })
 })
