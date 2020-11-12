@@ -10,7 +10,7 @@ const geoCode = (address, callback)=>{
     (error,{body}={})=>{
         if(error){
             callback('Unable to Connect',undefined);
-        }else if(body.features.length ==0 ){
+        }else if( !body || !body.features || body.features.length ==0 ){
             callback('Unable to find location please change your search',undefined);
         }else{
         console.log(body.features[0].center[0] + '  ' + body.features[0].center[1] + ' ' + body.features[0].place_name);
